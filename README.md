@@ -407,31 +407,35 @@ At this moment segmentation pipeline supports following architectures:
 
 `FPN`, `PSP`, `Linkenet`, `UNet` architectures support following backbones: 
 
-  - vgg16
-  - vgg19
-  - resnet18
-  - resnet34
-  - resnet50 
-  - resnet101
-  - resnet152
-  - resnext50
-  - resnext101 
-  - densenet121
-  - densenet169
-  - densenet201
-  - inceptionv3 
-  - inceptionresnetv2
+  - [VGGNet](https://arxiv.org/abs/1409.1556)
+    - vgg16
+    - vgg19
+  - [ResNet](https://arxiv.org/abs/1512.03385)
+    - resnet18
+    - resnet34
+    - resnet50 
+    - resnet101
+    - resnet152
+  - [ResNext](https://arxiv.org/abs/1611.05431)
+    - resnext50
+    - resnext101
+  - [DenseNet](https://arxiv.org/abs/1608.06993)
+    - densenet121
+    - densenet169
+    - densenet201
+  - [Inception-v3](https://arxiv.org/abs/1512.00567)
+  - [Inception-ResNet-v2](https://arxiv.org/abs/1602.07261)
 
-All them support has support for the weights pretrained on imagenet:
+All them support the weights pretrained on [ImageNet](http://www.image-net.org/):
 ```yaml
 encoder_weights: imagenet
 ```
 
 At this moment `DeeplabV3` architecture supports following backbones:
- - mobilenetv2
- - xception
+ - [MobileNetV2](https://arxiv.org/abs/1801.04381)
+ - [Xception](https://arxiv.org/abs/1610.02357)
 
-Deeplab supports weights pretrained on pacal_voc
+Deeplab supports weights pretrained on [PASCAL VOC](http://host.robots.ox.ac.uk/pascal/VOC/):
 
 ```yaml
 encoder_weights: pascal_voc
